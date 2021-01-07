@@ -1,2 +1,16 @@
 # WebLibrary
-It is simply django app that import cvs files (eg. in tests) store in db in this case default sqllite3 and use django rest_framework 
+It is simply django app, that use Rest Api in this case DRF
+
+You can import books, and opinions from csv files. 
+Informations you can put in book.csv files is:
+  - inbs
+  - author
+  - name of book
+  - genre
+Information you must put in opinions files is:
+  -inbs
+  -mark
+  -opinion
+  
+This informations will be store in data-base, and can be download via link:
+eq. /api_v1/books/

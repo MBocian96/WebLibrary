@@ -25,4 +25,4 @@ class Command(BaseCommand):
                         b.opinion_set.create(mark=row[1], description=row[2])
                     except Book.DoesNotExist:
                         self.stdout.write(self.style.ERROR(f'Book does not exists'))
-        print(self.stdout.write(self.style.SUCCESS('Opinions successfully loaded')))
+        self.stdout.write(self.style.SUCCESS('Opinions successfully loaded'))

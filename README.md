@@ -7,11 +7,11 @@ Informations you can put in book.csv files is:
   - author
   - name of book
   - genre.
-  
+
 Information you must put in opinions files is:
   -isnb
   -mark
   -opinion.
   
 This informations will be store in data-base, and can be download via link:
-eq. /api_v1/books/
+eq. /api/v1/books/

@@ -21,4 +21,4 @@ class Opinion(models.Model):
     book = ForeignKey(Book, on_delete=CASCADE)
 
     def __repr__(self):
-        return f'{self.isnb}, {self.mark}, {self.description}'
+        return f'{self.mark}, {self.description}'

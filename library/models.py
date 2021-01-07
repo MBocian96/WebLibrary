@@ -9,6 +9,9 @@ class Book(models.Model):
     author = CharField(max_length=40)
     genre = CharField(max_length=40)
 
+    def __repr__(self):
+        return f'{self.isnb}, {self.title}, {self.author}, {self.genre}'
+
 
 class Opinion(models.Model):
     isnb = CharField(max_length=13)
@@ -16,3 +19,6 @@ class Opinion(models.Model):
     description = CharField(max_length=50)
 
     book = ForeignKey(Book, on_delete=CASCADE)
+
+    def __repr__(self):
+        return f'{self.isnb}, {self.mark}, {self.description}'

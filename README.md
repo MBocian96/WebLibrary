@@ -3,14 +3,15 @@ It is simply django app, that use Rest Api in this case DRF
 
 You can import books, and opinions from csv files. 
 Informations you can put in book.csv files is:
-  - inbs
+  - isnb
   - author
   - name of book
-  - genre
+  - genre.
+  
 Information you must put in opinions files is:
-  -inbs
+  -isnb
   -mark
-  -opinion
+  -opinion.
   
 This informations will be store in data-base, and can be download via link:
 eq. /api_v1/books/

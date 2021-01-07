@@ -16,7 +16,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         books_csv_paths = options[BOOKS]
         for csv_file_path in books_csv_paths:
-            with open(csv_file_path, mode='r',  encoding='UTF-8', newline='') as csv_file:
+            with open(csv_file_path, mode='r', encoding='UTF-8', newline='') as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=';')
                 next(csv_reader, None)
                 for row in csv_reader:
